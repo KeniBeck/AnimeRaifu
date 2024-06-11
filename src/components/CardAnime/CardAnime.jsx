@@ -1,4 +1,4 @@
-import PruebaJujutsu from "../../../public/img/pruebaJujutsu.jpeg"
+import PruebaJujutsu from "/img/pruebaJujutsu.jpeg"
 
 
 export const CardAnime = () => {
