@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import { Home } from './pages/Home'
-import { Footer } from './components/Footer/Footer';
+import { CapsAnime } from './pages/CapsAnime/CapsAnime';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/footer' element={<Footer />} />
+        <Route path='/anime' element={<CapsAnime />} />
       </Routes>
       
     </>    

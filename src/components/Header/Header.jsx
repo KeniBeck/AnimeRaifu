@@ -16,21 +16,27 @@ export const Header = () => {
         <>
         <div className="w-full h-[70px] xl:h-[90px] px-6 flex justify-between items-center bg-[#272727]">
             <div className="flex ">
-                <div className="w-10 h-10 rounded-full bg-white">logo</div>
+                <a href="/">
+                    <div className="w-10 h-10 rounded-full bg-white">logo</div>
+                </a>    
+                    
                 <div className="hidden">Anime Raifu</div>
             </div>
             <div className="flex relative gap-3">
                 <Aside isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-                {sidebarOpen && (
-                    <div
+                {
+                    sidebarOpen && (
+                <div    
                     className="fixed inset-0 bg-black bg-opacity-50 z-10"
                     onClick={toggleSidebar}
-                    ></div>
-                )}
+                ></div>
+                    )
+                }
+                    
+                
                 <BtnHeader title="Top" />
                 <BtnHeader title="Catalogo" />
                 <NavBar />
-                
                 <div className="lg:hidden">
                     <IoMenu onClick={()=>toggleSidebar()} className="text-5xl" />
                 </div>
