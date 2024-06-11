@@ -1,10 +1,13 @@
 import { CardAnime } from "../CardAnime/CardAnime";
+import { Title } from "../Title/Title";
+
 
 export const Top = () => {
     return ( 
-        <div className="w-full flex flex-col gap-4 py-3">
-            <div className="px-5 font-medium text-2xl">Top global</div>
-            <div className="px-4 w-full lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-between">
+        <div className="w-full flex flex-col gap-4 py-3 px-4">
+            <Title title="Top global"/>
+            
+            <div className="w-full lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-between">
                 <div className="w-full max-h-[250px] lg:max-h-[1000px] xl:max-h-full lg:mb-0 flex flex-col lg:w-1/3 mb-4 ">
                     <div className="py-2 text-lg md:text-2xl font-bold text-center rounded-t-xl bg-slate-200 sm:bg-slate-300 ">
                         Que son los top global

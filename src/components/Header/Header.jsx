@@ -21,16 +21,19 @@ export const Header = () => {
             </div>
             <div className="flex relative gap-3">
                 <Aside isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-                {sidebarOpen && (
-                    <div
+                {
+                    sidebarOpen && (
+                <div    
                     className="fixed inset-0 bg-black bg-opacity-50 z-10"
                     onClick={toggleSidebar}
-                    ></div>
-                )}
+                ></div>
+                    )
+                }
+                    
+                
                 <BtnHeader title="Top" />
                 <BtnHeader title="Catalogo" />
                 <NavBar />
-                
                 <div className="lg:hidden">
                     <IoMenu onClick={()=>toggleSidebar()} className="text-5xl" />
                 </div>
