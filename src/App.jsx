@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import { Home } from './pages/Home'
 import { CapsAnime } from './pages/CapsAnime/CapsAnime';
+import { VideoAnime } from './pages/VideoAnime/VideoAnime';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/anime' element={<CapsAnime />} />
+        <Route path='/videoanime' element={<VideoAnime />} />
       </Routes>
       
     </>    

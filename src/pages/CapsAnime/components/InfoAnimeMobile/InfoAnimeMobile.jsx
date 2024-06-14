@@ -1,9 +1,9 @@
-import pruebaJujutsu from '/public/img/pruebaJujutsu.jpeg'
+import pruebaJujutsu from '/img/pruebaJujutsu.jpeg'
 
 
 export const InfoAnimeMobile = () => {
     return (  
-        <div className="w-full flex flex-col rounded-2xl px-4 py-3 gap-3 bg-[#9F9F9F] ">
+        <div className="w-full flex flex-col rounded-2xl px-4 py-3 gap-3 sm:hidden bg-[#9F9F9F] ">
             <div className="text-4xl font-semibold ">Jujutsu kaisen </div>
             <div className="w-full flex gap-3 ">
                 <div className="w-full">
